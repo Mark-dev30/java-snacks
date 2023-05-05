@@ -9,11 +9,17 @@ public class Snack {
 		System.out.println("Inserisci un numero");
 		int num = in.nextInt();
 		in.close();
-		if(num % 2 == 0) {
-			System.out.println(num);
-		}
-		else {
-			System.out.println(num+1);
-		}
+		System.out.println(
+				num %2 == 0
+				? num
+				: num + 1
+				);
+		//ELSE
+//		if(num % 2 == 0) {
+//			System.out.println(num);
+//		}
+//		else {
+//			System.out.println(num+1);
+//		}
 	}
 }
