@@ -12,12 +12,12 @@ public class Snack8 {
 			int casualNumber = (int)(Math.random() * 100 + 1);
 			
 			if(casualNumber % 2 == 0) {
-				even[val1] = casualNumber;
-				++val1;
+				even[val1++] = casualNumber;
+				
 			}
 			else {
-				odd[val2] = casualNumber;
-				++val2;
+				odd[val2++] = casualNumber;
+				
 			}
 		}
 		System.out.println("I numeri pari random sono: " + Arrays.asList(even));
